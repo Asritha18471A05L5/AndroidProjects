@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_margin="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Toast"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:onClick="showToastMessage"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/tv"
+        android:background="@color/colorAccent"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="100sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Inc Count"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/countBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Dec Count"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/decBtn"/>
+
+</LinearLayout>
